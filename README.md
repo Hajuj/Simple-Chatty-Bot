@@ -3,6 +3,6 @@ My first (little) project, it's a chatty bot that will ask you some questions an
 
 Run the code buy running SimpleBot.java.
 
-Please contact me if there's any mistakes in the code.
+Please contact me if there's any issues in the code.
 
 Enjoy:)

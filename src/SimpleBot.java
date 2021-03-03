@@ -9,7 +9,6 @@ public class SimpleBot {
         guessAge();
         count();
         test();
-        end();
     }
 
     static void greet() {
@@ -42,25 +41,65 @@ public class SimpleBot {
     }
 
     static void test() {
-        System.out.println("Now let's test your programming knowledge.");
-        System.out.println("Why do we use methods?");
-        System.out.println("1. To repeat a statement multiple times.");
-        System.out.println("2. To decompose a program into several small subroutines.");
-        System.out.println("3. To determine the execution time of a program.");
-        System.out.println("4. To interrupt the execution of a program.");
+        System.out.println("Would you like to participate in a short Java test?");
+        System.out.println("[1] Yes");
+        System.out.println("[2] No");
+        int ans = scanner.nextInt();
+        switch (ans) {
+            case 1:
+                System.out.println("Let's test your programming knowledge!");
+                System.out.println("First question:");
+                System.out.println("Why do we use methods?");
+                System.out.println("[1] To repeat a statement multiple times.");
+                System.out.println("[2] To decompose a program into several small subroutines.");
+                System.out.println("[3] To determine the execution time of a program.");
+                System.out.println("[4] To interrupt the execution of a program.");
 
-        while (true) {
-            String ans = scanner.next();
-            if (ans.contains("2")) {
+                while (true) {
+                    ans = scanner.nextInt();
+                    if (ans == 2) {
+                        System.out.println("Correct!");
+                        break;
+                    }
+                    System.out.println("Please, try again.");
+                }
+
+                System.out.println("Second question:");
+                System.out.println("What is instanceof?");
+                System.out.println("[1] An operator and keyword.");
+                System.out.println("[2] A keyword only.");
+                System.out.println("[3] A methods in object.");
+                System.out.println("[4] An operator only.");
+
+                while (true) {
+                    ans = scanner.nextInt();
+                    if (ans == 1) {
+                        System.out.println("Correct!");
+                        break;
+                    }
+                    System.out.println("Please, try again.");
+                }
+
+                System.out.println("Third question:");
+                System.out.println("What is the appropriate data type for this field: isSwimmer?");
+                System.out.println("[1] int");
+                System.out.println("[2] String");
+                System.out.println("[3] Double");
+                System.out.println("[4] Boolean");
+
+                while (true) {
+                    ans = scanner.nextInt();
+                    if (ans == 4) {
+                        System.out.println("Correct!");
+                        break;
+                    }
+                    System.out.println("Please, try again.");
+                }
+                System.out.println("Congratulations your answers are correct, have a nice day!");
                 break;
-            }
-            if (!ans.contains("2")) {
-                System.out.println("Please, try again.");
-            }
+            case 2:
+                System.out.println("Okay, have a nice day!");
+                break;
         }
-    }
-
-    static void end() {
-        System.out.println("Congratulations your answer is correct, have a nice day!");
     }
 }

@@ -41,10 +41,6 @@ public class StartWindow implements ActionListener {
         frame.setResizable(true);
     }
 
-    public static void main(String[] args) {
-        new StartWindow();
-    }
-
     @Override
     public void actionPerformed(ActionEvent e) {
 

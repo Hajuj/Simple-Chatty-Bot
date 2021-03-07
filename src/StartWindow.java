@@ -16,7 +16,7 @@ public class StartWindow implements ActionListener {
         button = new JButton("Start Chatting");
         button.setPreferredSize(new Dimension(40,55));
 
-        label1 = new JLabel("<html> Welcome to the Chatty Bot! <br><br>", JLabel.CENTER);
+        label1 = new JLabel("<html> Welcome to the Chatty Bot! <br><br>");
         label1.setFont(new Font("Courier New", Font.BOLD, 18));
         label1.setForeground(Color.DARK_GRAY);
 
